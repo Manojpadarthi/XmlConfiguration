@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   
+   <bean id="library" class="com.example.demo.Library">
+   
+   <property name="book" ref="book"/>
+   <property name="names">
+   
+   <list>
+    <value>Gandhi library</value>
+    <value>Nehru library</value>
+    <value>Vallabhai library</value>
+   </list>
+  </property>
+  
+  <property name="keyValue">
+    <map>
+     <entry key="manoj" value="1"/>
+       
+      <entry key="rahul" value="2"/>
+      
+       <entry key="kesav" value="3"/>
+    
+    </map>
+  
+  </property>
+   
+   </bean>
+  </beans>
